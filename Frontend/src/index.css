@@ -1,0 +1,33 @@
+@import "tailwindcss";
+.mind-font {
+  font-family: "Bricolage Grotesque", "Trebuchet MS", system-ui, sans-serif;
+}
+
+:root {
+  --animate-morph: morph 9s ease-in-out infinite;
+}
+
+@keyframes morph {
+  0%, 100% { border-radius: 46% 54% 52% 48% / 50% 44% 56% 50%; }
+  50%      { border-radius: 56% 44% 42% 58% / 46% 56% 44% 54%; }
+}
+
+.animate-morph {
+  animation: var(--animate-morph);
+}
+.logo i {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #FFE27A, #FF8FC7 60%, #8E86FF);
+    display: block;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}

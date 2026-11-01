@@ -1,0 +1,21 @@
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Node.js
+node_modules/
+Backend/node_modules/
+Frontend/node_modules/Z
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# Build files
+Frontend/dist/
+Backend/dist/
+
+# Vector database
+chroma_database/
